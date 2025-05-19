@@ -1,10 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Advanced HTML Forms and Inputs for Enhanced User Interaction." />
+    <title>Forms and Inputs - HTML Encyclopedia</title>
 </head>
 <body>
+<header>
+    <h1>HTML Forms and Inputs</h1>
+    <nav aria-label="Breadcrumb">
+        <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="forms-and-inputs.html" aria-current="page">Forms and Inputs</a></li>
+        </ol>
+    </nav>
+</header>
 
+<main>
+    <article itemscope itemtype="https://schema.org/TechArticle">
+        <header>
+            <h2 itemprop="headline">Creating Accessible and Advanced Forms</h2>
+            <p>Author: <span itemprop="author">Mosen</span> — <time datetime="2025-05-19" itemprop="datePublished">May 19, 2025</time></p>
+        </header>
+
+        <section>
+            <h3>Form Basics</h3>
+            <p>Forms collect user input via various input elements like text, email, password, and buttons.</p>
+        </section>
+
+        <section>
+            <h3>Input Types</h3>
+            <ul>
+                <li><code>text</code>, <code>email</code>, <code>password</code>, <code>number</code>, <code>date</code></li>
+                <li><code>radio</code>, <code>checkbox</code>, <code>range</code></li>
+                <li><code>file</code>, <code>color</code>, <code>tel</code></li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Accessibility Considerations</h3>
+            <p>Use <code>&lt;label&gt;</code> elements properly linked with inputs via <code>for</code> attribute for screen readers.</p>
+        </section>
+
+        <section>
+            <h3>Example Form</h3>
+            <form action="#" method="post" novalidate>
+                <label for="name">Name:</label><br />
+                <input type="text" id="name" name="name" required /><br />
+
+                <label for="email">Email:</label><br />
+                <input type="email" id="email" name="email" required /><br />
+
+                <fieldset>
+                    <legend>Choose your subscription:</legend>
+                    <input type="radio" id="free" name="subscription" value="free" checked />
+                    <label for="free">Free</label><br />
+
+                    <input type="radio" id="premium" name="subscription" value="premium" />
+                    <label for="premium">Premium</label><br />
+                </fieldset>
+
+                <label for="comments">Comments:</label><br />
+                <textarea id="comments" name="comments" rows="4" cols="30"></textarea><br />
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </article>
+</main>
+
+<footer>
+    <p>&copy; 2025 - Developed by <strong>Mosen</strong></p>
+</footer>
 </body>
 </html>

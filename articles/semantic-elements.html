@@ -1,10 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Understanding Semantic Elements in HTML5 for Accessibility and SEO." />
+    <title>Semantic Elements - HTML Encyclopedia</title>
 </head>
 <body>
+<header>
+    <h1>Semantic Elements in HTML5</h1>
+    <nav aria-label="Breadcrumb">
+        <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="semantic-elements.html" aria-current="page">Semantic Elements</a></li>
+        </ol>
+    </nav>
+</header>
 
+<main>
+    <article itemscope itemtype="https://schema.org/TechArticle">
+        <header>
+            <h2 itemprop="headline">The Importance of Semantic HTML</h2>
+            <p>Author: <span itemprop="author">Mosen</span> — <time datetime="2025-05-19" itemprop="datePublished">May 19, 2025</time></p>
+        </header>
+
+        <section>
+            <h3>What Are Semantic Elements?</h3>
+            <p>Semantic elements clearly define the meaning and structure of web content, making it easier for browsers, developers, and assistive technologies to understand.</p>
+        </section>
+
+        <section>
+            <h3>Common Semantic Tags</h3>
+            <ul>
+                <li><code>&lt;header&gt;</code> - Defines a header for a document or section</li>
+                <li><code>&lt;nav&gt;</code> - Defines navigation links</li>
+                <li><code>&lt;article&gt;</code> - Defines an independent, self-contained piece of content</li>
+                <li><code>&lt;section&gt;</code> - Defines a thematic grouping of content</li>
+                <li><code>&lt;aside&gt;</code> - Defines content aside from the main content</li>
+                <li><code>&lt;footer&gt;</code> - Defines a footer for a document or section</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Benefits of Using Semantic Elements</h3>
+            <p>Semantic HTML enhances:</p>
+            <ul>
+                <li>Accessibility: Screen readers can navigate content more effectively</li>
+                <li>SEO: Search engines better understand your page structure</li>
+                <li>Maintainability: Clear structure helps developers manage code easily</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Example Usage</h3>
+            <pre><code>&lt;header&gt;
+  &lt;h1&gt;Page Title&lt;/h1&gt;
+&lt;/header&gt;
+&lt;nav&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;article&gt;
+  &lt;h2&gt;Article Heading&lt;/h2&gt;
+  &lt;p&gt;Article content...&lt;/p&gt;
+&lt;/article&gt;
+&lt;footer&gt;
+  &lt;p&gt;Footer information&lt;/p&gt;
+&lt;/footer&gt;
+</code></pre>
+        </section>
+    </article>
+</main>
+
+<footer>
+    <p>&copy; 2025 - Developed by <strong>Mosen</strong></p>
+</footer>
 </body>
 </html>

@@ -1,10 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Introduction to HTML basics and semantic structure." />
+    <title>Introduction to HTML - HTML Encyclopedia</title>
 </head>
 <body>
+<header>
+    <h1>Introduction to HTML</h1>
+    <nav aria-label="Breadcrumb">
+        <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="introduction-to-html.html" aria-current="page">Introduction to HTML</a></li>
+        </ol>
+    </nav>
+</header>
 
+<main>
+    <article itemscope itemtype="https://schema.org/TechArticle">
+        <header>
+            <h2 itemprop="headline">Introduction to HTML</h2>
+            <p>Author: <span itemprop="author">Mosen</span> — <time datetime="2025-05-19" itemprop="datePublished">May 19, 2025</time></p>
+        </header>
+
+        <section>
+            <h3>What is HTML?</h3>
+            <p>HTML stands for HyperText Markup Language and is the standard language for creating web pages.</p>
+        </section>
+
+        <section>
+            <h3>Semantic HTML</h3>
+            <p>Semantic elements clearly describe their meaning in a human- and machine-readable way.</p>
+            <ul>
+                <li><code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code></li>
+                <li>Help improve accessibility and SEO</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Basic HTML Document Structure</h3>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- Content goes here --&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+        </section>
+    </article>
+</main>
+
+<footer>
+    <p>&copy; 2025 - Developed by <strong>Mosen</strong></p>
+</footer>
 </body>
 </html>
