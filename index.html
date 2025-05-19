@@ -3,14 +3,105 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="The ultimate HTML Encyclopedia - A semantic and accessible HTML-only reference for professional developers." />
+    <meta name="description" content="HTML Encyclopedia - Advanced and Semantic HTML Examples" />
     <title>HTML Encyclopedia</title>
-    <link rel="icon" href="assets/images/favicon.png" type="image/png" />
+    <style>
+        /* Basic Reset */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        header, footer {
+            background: #222;
+            color: #fff;
+            padding: 1rem 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover, nav a:focus {
+            background: #444;
+        }
+
+        main {
+            max-width: 960px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        h1, h2 {
+            margin-bottom: 1rem;
+        }
+
+        section.intro {
+            background: #fff;
+            padding: 1rem 2rem;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        section.articles-list {
+            background: #fff;
+            padding: 1rem 2rem;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        ul.articles {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul.articles li {
+            margin-bottom: 0.75rem;
+        }
+
+        ul.articles a {
+            color: #007acc;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        ul.articles a:hover, ul.articles a:focus {
+            text-decoration: underline;
+        }
+
+        footer p {
+            margin: 0;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #bbb;
+        }
+    </style>
 </head>
 <body>
-<header>
-    <h1>📚 HTML Encyclopedia</h1>
-    <nav aria-label="Primary Navigation">
+<header role="banner">
+    <nav role="navigation" aria-label="Primary Navigation">
         <ul>
             <li><a href="index.html" aria-current="page">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -19,36 +110,24 @@
     </nav>
 </header>
 
-<main>
-    <section aria-labelledby="featured-articles">
-        <h2 id="featured-articles">Featured Articles</h2>
-
-        <article itemscope itemtype="https://schema.org/TechArticle">
-            <header>
-                <h3 itemprop="headline"><a href="articles/introduction-to-html.html" itemprop="url">Introduction to HTML</a></h3>
-                <p>Author: <span itemprop="author">Mosen</span> — <time datetime="2025-05-19" itemprop="datePublished">May 19, 2025</time></p>
-            </header>
-            <p itemprop="description">This article introduces the fundamental concepts of HTML and how to structure basic web pages using semantic elements.</p>
-        </article>
-
-        <article itemscope itemtype="https://schema.org/TechArticle">
-            <header>
-                <h3 itemprop="headline"><a href="articles/semantic-elements.html" itemprop="url">Semantic Elements</a></h3>
-                <p>Author: <span itemprop="author">Mosen</span> — <time datetime="2025-05-10" itemprop="datePublished">May 10, 2025</time></p>
-            </header>
-            <p itemprop="description">Learn why semantic elements matter in HTML5 and how they improve both accessibility and SEO.</p>
-        </article>
+<main role="main">
+    <section class="intro" aria-labelledby="intro-title">
+        <h1 id="intro-title">Welcome to HTML Encyclopedia</h1>
+        <p>This project demonstrates advanced HTML skills by creating semantic, accessible, and well-structured web pages that showcase the power of HTML in real-world scenarios.</p>
     </section>
 
-    <aside aria-label="Tip of the Day">
-        <h2>Tip of the Day</h2>
-        <p><mark>Using the <code>&lt;main&gt;</code> tag improves page structure and accessibility for screen readers.</mark></p>
-    </aside>
+    <section class="articles-list" aria-labelledby="articles-title">
+        <h2 id="articles-title">Articles</h2>
+        <ul class="articles">
+            <li><a href="articles/introduction-to-html.html">Introduction to HTML</a></li>
+            <li><a href="articles/semantic-elements.html">Semantic Elements</a></li>
+            <li><a href="articles/forms-and-inputs.html">Forms and Inputs</a></li>
+        </ul>
+    </section>
 </main>
 
-<footer>
-    <p>&copy; 2025 - Developed by <strong>Mosen</strong></p>
-    <p><small>All rights reserved.</small></p>
+<footer role="contentinfo">
+    <p>&copy; 2025 Mosen — Developed by <a href="https://github.com/MohsenRazaniDev" target="_blank" rel="noopener noreferrer">MohsenRazaniDev</a></p>
 </footer>
 </body>
 </html>

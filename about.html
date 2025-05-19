@@ -1,10 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="About Mosen and the HTML Encyclopedia project." />
+    <title>About - HTML Encyclopedia</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+            color: #222;
+            line-height: 1.6;
+            padding: 1rem 2rem;
+        }
+        header, footer {
+            background: #222;
+            color: #fff;
+            padding: 1rem 2rem;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            padding: 0;
+            margin: 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        nav a:hover, nav a:focus {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        a.social-link {
+            color: #007acc;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        a.social-link:hover, a.social-link:focus {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
+<header role="banner">
+    <nav role="navigation" aria-label="Primary Navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" aria-current="page">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
+<main role="main">
+    <article>
+        <header>
+            <h1>About Mosen</h1>
+        </header>
+        <section>
+            <p>Hello! I'm <strong>Mosen</strong>, a passionate web developer specializing in advanced HTML, CSS, and front-end technologies.</p>
+            <p>This HTML Encyclopedia project is designed to demonstrate semantic and professional HTML skills, showcasing my expertise for senior-level developers and recruiters.</p>
+            <p>Feel free to check my work and projects on <a href="https://github.com/MohsenRazaniDev" target="_blank" rel="noopener noreferrer" class="social-link">GitHub</a>.</p>
+        </section>
+        <section>
+            <h2>Skills & Technologies</h2>
+            <ul>
+                <li>Advanced HTML5 semantic markup</li>
+                <li>Accessible and responsive design</li>
+                <li>CSS3, Flexbox, Grid</li>
+                <li>JavaScript (ES6+)</li>
+                <li>Version control with Git & GitHub</li>
+            </ul>
+        </section>
+    </article>
+</main>
+
+<footer role="contentinfo">
+    <p>&copy; 2025 Mosen — Developed by <a href="https://github.com/MohsenRazaniDev" target="_blank" rel="noopener noreferrer">MohsenRazaniDev</a></p>
+</footer>
 </body>
 </html>
