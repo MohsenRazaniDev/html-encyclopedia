@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="The ultimate HTML Encyclopedia - A semantic and accessible HTML-only reference for professional developers." />
+    <title>HTML Encyclopedia</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/png" />
+</head>
+<body>
+<header>
+    <h1>📚 HTML Encyclopedia</h1>
+    <nav aria-label="Primary Navigation">
+        <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section aria-labelledby="featured-articles">
+        <h2 id="featured-articles">Featured Articles</h2>
+
+        <article itemscope itemtype="https://schema.org/TechArticle">
+            <header>
+                <h3 itemprop="headline"><a href="articles/introduction-to-html.html" itemprop="url">Introduction to HTML</a></h3>
+                <p>Author: <span itemprop="author">Mosen</span> — <time datetime="2025-05-19" itemprop="datePublished">May 19, 2025</time></p>
+            </header>
+            <p itemprop="description">This article introduces the fundamental concepts of HTML and how to structure basic web pages using semantic elements.</p>
+        </article>
+
+        <article itemscope itemtype="https://schema.org/TechArticle">
+            <header>
+                <h3 itemprop="headline"><a href="articles/semantic-elements.html" itemprop="url">Semantic Elements</a></h3>
+                <p>Author: <span itemprop="author">Mosen</span> — <time datetime="2025-05-10" itemprop="datePublished">May 10, 2025</time></p>
+            </header>
+            <p itemprop="description">Learn why semantic elements matter in HTML5 and how they improve both accessibility and SEO.</p>
+        </article>
+    </section>
+
+    <aside aria-label="Tip of the Day">
+        <h2>Tip of the Day</h2>
+        <p><mark>Using the <code>&lt;main&gt;</code> tag improves page structure and accessibility for screen readers.</mark></p>
+    </aside>
+</main>
+
+<footer>
+    <p>&copy; 2025 - Developed by <strong>Mosen</strong></p>
+    <p><small>All rights reserved.</small></p>
+</footer>
+</body>
+</html>
